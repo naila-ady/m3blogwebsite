@@ -5,23 +5,22 @@ import Link from "next/link"
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
- 
 
 export default async function Home(){
   const query =`*[_type =='blog'] | order(_createdAtdesc){
        title,
-     'currentslug':slug.current,
-      titleimage,
-      description,
+       'currentslug':slug.current,
+       titleimage,
+       description,
        content}`
-
- const sanitydata:simpleblogcard[] = await client.fetch(query)
-    
-  
-    
-  return (
-    <div className="max-w-[1920px] mx-auto  ">
-    
+       
+       const sanitydata:simpleblogcard[] = await client.fetch(query)
+       
+       
+       
+       return (
+         <div className="max-w-[1920px] mx-auto  ">
+      
       {sanitydata.length > 0 ? (
         sanitydata.map((post, idx) => (
           <div key={idx} className=" max-w-[600px] mx-auto py-4">
