@@ -41,7 +41,7 @@ async function getData(slug:string) {
           <h2 className="max-w-[1320px] mx-auto text-[26px] font-semibold text-gray-500 py-4  ">
           {data.description}
           </h2>
-           <div  className="py-4 max-w-[1320px] mx-auto prose prose-stone prose-2xl dark:invert prose-ul:marker:text-red-400" >
+           <div  className="py-4 max-w-[1320px] mx-auto prose prose-stone prose-2xl dark:invert" >
                       <PortableText value={data.content}/>
            </div>
 

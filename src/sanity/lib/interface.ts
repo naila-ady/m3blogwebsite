@@ -10,5 +10,5 @@ export interface fullblogcard{
   title:string
   content:any,
   titleimage:any,
-  description:any,
+  description:string,
 }
