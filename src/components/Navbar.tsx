@@ -41,7 +41,7 @@ const Navbar = () => {
           <Link href={"/"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Home <CircleEllipsis className='w-3 h-3 text-primary' />
           </Link>
-                   <Link href={"../../blogarticle"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+                   <Link href={"../blog"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Blog
           </Link>
           <Link href={"../about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
@@ -81,7 +81,7 @@ const Navbar = () => {
               <Link href={"/"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                 Home <CircleEllipsis className='w-3 h-3 text-[#FF9F0D]' />
               </Link>
-                            <Link href={"./blog"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+                            <Link href={"./blog"}className="mr-5 text-1xl hover:text-[#ff9f0d]">
                 Blog
               </Link>
               <Link href={"./about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
