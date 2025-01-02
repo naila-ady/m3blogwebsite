@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
  
 
 export default async function Home(){
-  const query =`*[_type =='blog'] |order(_createdAtdesc){
+  const query =`*[_type =='blog'] | order(_createdAtdesc){
        title,
      'currentslug':slug.current,
       titleimage,
