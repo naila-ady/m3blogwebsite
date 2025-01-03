@@ -3,12 +3,12 @@ import Link from 'next/link'
 import {ModeToggle} from "../components/Toggle"
 import { Search, Briefcase } from 'lucide-react';
 import { CircleEllipsis, Menu } from 'lucide-react';
-import {
-  Select,
-  SelectContent,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+// import {
+//   Select,
+//   SelectContent,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select"
 
 
 
@@ -41,13 +41,13 @@ const Navbar = () => {
           <Link href={"/"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Home <CircleEllipsis className='w-3 h-3 text-primary' />
           </Link>
-                   <Link href={"../blog"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+                   <Link href={"/blog"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Blog
           </Link>
-          <Link href={"../about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+          <Link href={"/about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             AboutUs
           </Link>
-          <Select>
+          {/* <Select>
             <SelectTrigger className="w-[78px] h-[24px] text-sm px-2 border-none">
               <SelectValue placeholder="Pages" />
             </SelectTrigger>
@@ -66,8 +66,8 @@ const Navbar = () => {
               </Link>
 
             </SelectContent>
-          </Select>
-                  <Link href={"../contact"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+          </Select> */}
+                  <Link href={"/contact"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Contact
           </Link>
         </ul>
@@ -81,13 +81,13 @@ const Navbar = () => {
               <Link href={"/"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                 Home <CircleEllipsis className='w-3 h-3 text-[#FF9F0D]' />
               </Link>
-                            <Link href={"./blog"}className="mr-5 text-1xl hover:text-[#ff9f0d]">
+                            <Link href={"/blog"}className="mr-5 text-1xl hover:text-[#ff9f0d]">
                 Blog
               </Link>
-              <Link href={"./about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+              <Link href={"/about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                 AboutUs
               </Link>
-              <Select>
+              {/* <Select>
                 <SelectTrigger className="w-[78px] h-[24px] text-sm px-2 border-none">
                   <SelectValue placeholder="Pages" />
                 </SelectTrigger>
@@ -106,9 +106,9 @@ const Navbar = () => {
                   </Link>
 
                 </SelectContent>
-              </Select>
+              </Select> */}
              
-              <Link href={"./contact"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+              <Link href={"/contact"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                 Contact
               </Link>
             </ul>
