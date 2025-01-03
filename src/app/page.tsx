@@ -4,7 +4,7 @@ import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link"
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-
+import blog from "../app/blog/[slug]/page";
 
 export default async function Home(){
   const query =`*[_type =='blog'] | order(_createdAtdesc){

@@ -4,6 +4,7 @@ import { fullblogcard } from '@/sanity/lib/interface';
 import { urlFor } from '@/sanity/lib/image';
 import Image from 'next/image';
 import { PortableText } from 'next-sanity';
+import Comments from "@/components/Comments";
 async function getData(slug:string) {
 
   const query=
@@ -18,7 +19,7 @@ async function getData(slug:string) {
  return data;
   }
   
- export default  async function BlogArticle  ({
+ export default  async function Blog  ({
   params
 }:{
   params:{slug:string};
@@ -44,7 +45,8 @@ async function getData(slug:string) {
            <div  className="py-4 max-w-[1320px] mx-auto prose prose-stone prose-2xl dark:invert" >
                       <PortableText value={data.content}/>
            </div>
-
+           
+      <Comments/>
             
         </div>
   )
