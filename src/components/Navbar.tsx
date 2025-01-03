@@ -38,14 +38,14 @@ const Navbar = () => {
         <ModeToggle/>
         {/* Links section */}
         <ul className='max-w-[800px] h-[24px] text-[16px] text-primary hidden md:flex gap-1 list-none ">'>
-          <Link href={"/"} className="mr-5 text-2xl hover:text-gray-500">
+          <Link href={"/"} className="mr-5 text-1xl hover:text-gray-500">
             Home <CircleEllipsis className='w-3 h-3 text-primary' />
           </Link>
-                   {/* <Link href={"/blog"} className="mr-5 text-2xl hover:text-gray-500">
+                   <Link href={"/blog"} className="mr-5 text-1xl hover:text-gray-500">
             Blog
-          </Link> */}
+          </Link>
           
-          <Link href={"/about"} className="mr-5 text-2xl hover:text-gray-500">
+          <Link href={"/about"} className="mr-5 text-1xl hover:text-gray-500">
             AboutUs
           </Link>
           {/* <Select>
@@ -54,21 +54,21 @@ const Navbar = () => {
             </SelectTrigger>
             <SelectContent className=''>
 
-              <Link href="../signup" className="mr-5 text-2xl text-primaryhover:text-gray-500">>
+              <Link href="../signup" className="mr-5 text-1xl text-primaryhover:text-gray-500">>
                 Sign Up
               </Link>
 
-              <Link href="../signin" className="mr-5 text-2xl text-primaryhover:text-gray-500">>
+              <Link href="../signin" className="mr-5 text-1xl text-primaryhover:text-gray-500">>
                 Sign In
               </Link>
 
-              <Link href="../error404" className="mr-5 text-2xl text-primaryhover:text-gray-500">>
+              <Link href="../error404" className="mr-5 text-1xl text-primaryhover:text-gray-500">>
                 Error 404
               </Link>
 
             </SelectContent>
           </Select> */}
-                  <Link href={"/contact"} className="mr-5 text-2xl hover:text-gray-500">
+                  <Link href={"/contact"} className="mr-5 text-1xl hover:text-gray-500">
             Contact
           </Link>
         </ul>
@@ -79,13 +79,13 @@ const Navbar = () => {
           </SheetTrigger>
           <SheetContent className='bg-white'>
             <ul className="flex flex-col gap-1 list-none ">
-              <Link href={"/"} className="mr-5 text-2xlhover:text-gray-500">
+              <Link href={"/"} className="mr-5 text-1xlhover:text-gray-500">
                 Home <CircleEllipsis className='w-3 h-3 text-[#FF9F0D]' />
               </Link>
-                            {/* <Link href={"/blog"}className="mr-5 text-2xl hover:text-gray-500">
+                            <Link href={"/blog"}className="mr-5 text-1xl hover:text-gray-500">
                 Blog
-              </Link> */}
-              <Link href={"/about"} className="mr-5 text-2xl hover:text-gray-500">
+              </Link>
+              <Link href={"/about"} className="mr-5 text-1xl hover:text-gray-500">
                 AboutUs
               </Link>
               {/* <Select>
@@ -94,22 +94,22 @@ const Navbar = () => {
                 </SelectTrigger>
                 <SelectContent className=''>
 
-                  <Link href="../signup" className="mr-5 text-2xl text-primaryhover:text-gray-500">>
+                  <Link href="../signup" className="mr-5 text-1xl text-primaryhover:text-gray-500">>
                     Sign Up
                   </Link>
 
-                  <Link href="../signin" className="mr-5 text-2xl text-primaryhover:text-gray-500">>
+                  <Link href="../signin" className="mr-5 text-1xl text-primaryhover:text-gray-500">>
                     Sign In
                   </Link>
 
-                  <Link href="../error404" className="mr-5 text-2xl text-primaryhover:text-gray-500">>
+                  <Link href="../error404" className="mr-5 text-1xl text-primaryhover:text-gray-500">>
                     Error 404
                   </Link>
 
                 </SelectContent>
               </Select> */}
              
-              <Link href={"/contact"} className="mr-5 text-2xl hover:text-gray-500">
+              <Link href={"/contact"} className="mr-5 text-1xl hover:text-gray-500">
                 Contact
               </Link>
             </ul>
