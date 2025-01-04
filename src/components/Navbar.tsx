@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import {ModeToggle} from "../components/Toggle"
+import { ModeToggle } from "../components/Toggle"
 import { Search, Briefcase } from 'lucide-react';
 import { CircleEllipsis, Menu } from 'lucide-react';
 // import {
@@ -27,7 +27,7 @@ const Navbar = () => {
       {/*  title  */}
       <div className=' flex justify-center'>
         <h1 className='sm:text-7xl text-2xl font-extrabold text-primary'>
-        The Ed-Tech 
+          The Ed-Tech
           <span className='sm:text-7xl  text-2xl text-gray-400'> Chronicles</span>
         </h1>
       </div>
@@ -35,16 +35,16 @@ const Navbar = () => {
       {/* Links and Search section */}
       <div className='max-w-[1920px] h-[57px] bg-[#000000] flex flex-row justify-between
        px-2 ml-2 py-2  xl:justify-evenly mt-8 '>
-        <ModeToggle/>
+        <ModeToggle />
         {/* Links section */}
         <ul className='max-w-[800px] h-[24px] text-[16px] text-primary hidden md:flex gap-1 list-none ">'>
           <Link href={"/"} className="mr-5 text-1xl hover:text-gray-500">
             Home <CircleEllipsis className='w-3 h-3 text-primary' />
           </Link>
-                   <Link href={"/blog"} className="mr-5 text-1xl hover:text-gray-500">
+          <Link href={"/blog"} className="mr-5 text-1xl hover:text-gray-500">
             Blog
           </Link>
-          
+
           <Link href={"/about"} className="mr-5 text-1xl hover:text-gray-500">
             AboutUs
           </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
 
             </SelectContent>
           </Select> */}
-                  <Link href={"/contact"} className="mr-5 text-1xl hover:text-gray-500">
+          <Link href={"/contact"} className="mr-5 text-1xl hover:text-gray-500">
             Contact
           </Link>
         </ul>
@@ -82,7 +82,7 @@ const Navbar = () => {
               <Link href={"/"} className="mr-5 text-1xlhover:text-gray-500">
                 Home <CircleEllipsis className='w-3 h-3 text-[#FF9F0D]' />
               </Link>
-                            <Link href={"/blog"}className="mr-5 text-1xl hover:text-gray-500">
+              <Link href={"/blog"} className="mr-5 text-1xl hover:text-gray-500">
                 Blog
               </Link>
               <Link href={"/about"} className="mr-5 text-1xl hover:text-gray-500">
@@ -108,7 +108,7 @@ const Navbar = () => {
 
                 </SelectContent>
               </Select> */}
-             
+
               <Link href={"/contact"} className="mr-5 text-1xl hover:text-gray-500">
                 Contact
               </Link>
