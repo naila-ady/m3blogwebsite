@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default async function Home(){
-  const query =`*[_type =='blog'] | order(_createdAtdesc){
+  const query =`*[_type =='blog']  | order(_createdAt asc){
        title,
        'currentslug':slug.current,
        titleimage,
@@ -18,12 +18,13 @@ export default async function Home(){
        
        
        return (
-         <div className="max-w-[1920px] mx-auto  ">
+         <div className="max-w-[1920px] mx-auto grid lg:grid-cols-2 grid-rows-3 grid-cols-1    ">
       
       {sanitydata.length > 0 ? (
         sanitydata.map((post, idx) => (
           <div key={idx} className=" max-w-[600px] mx-auto py-4">
-            <h1 className="text-6xl font-semibold text-primary line-clamp-2 py-2">{post.title}</h1>
+            <h1 className="text-6xl font-semibold text-primary line-clamp-2 py-2">
+              {post.title}</h1>
             <h2 className="text-3xl font-medium text-gray-500 dark:text-gray-300 py-4 ">{post.currentslug}</h2>
             {post.titleimage ? (
               <Image 
@@ -31,7 +32,7 @@ export default async function Home(){
                 alt={post.title || "Blog Title"}
                 width={500}
                 height={500}
-                className="rounded-md flex"
+                className="rounded-md flex row-span-2"
               />
             ) 
             : (
@@ -46,8 +47,8 @@ export default async function Home(){
       ) : (
         
                     <p className="text-center">No blog data found.</p>
-        
-      )}
+                  )}
+                  
     </div>
     
   );

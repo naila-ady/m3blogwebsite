@@ -25,14 +25,19 @@ const addComment =()=>{
   value={comment}
   onChange={(e) =>setComment(e.target.value)}
   placeholder="Write Your Comment..."
-  className="border border-primary rounded-md w-full mb-4 focus:outline-none focus:ring-2 focus:ring-primary"/>
-        <button onClick={deletebutton} className="bg-red-300 rounded-full w-full mb-4  text-lg text-[#FFFFFF] hover:bg-gray-300 transition duration-300">
-    Delete Comments</button>
+  className="border border-primary bg-transparent text-[#333333] rounded-md w-full h-16 mb-4 focus:outline-none focus:ring-2 focus:ring-primary"/>
+        
 
    <button 
    onClick={addComment}
-   className="bg-primary rounded-full w-full mb-4  text-lg text-[#FFFFFF] hover:bg-gray-300 transition duration-300">
+   className="bg-transparent border border-primary rounded-full w-full mb-4 h-12 text-lg hover:bg-primary text-[#333333] transition duration-300">
     Add Comment</button>
+
+    <button onClick={deletebutton} className="bg-transparent border border-primary rounded-full w-full h-12 mb-4 focus:outline-none focus:ring-2 focus:ring-primary
+      text-lg text-[#333333] hover:bg-primary transition duration-300">
+    Delete Comments</button>
+
+ 
 
     <div className="mt-6">
         <h1 className="text-gray-500 text-2xl font-semibold  mb-2">All Comments:</h1>

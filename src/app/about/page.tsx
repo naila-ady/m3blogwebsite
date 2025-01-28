@@ -4,7 +4,7 @@ import React from "react";
 
 const About = () => {
     return (
-      <div className="max-w-[1920px]  container py-10 flex flex-col flex-wrap
+      <div className="max-w-[1920px] container py-10 flex flex-col flex-wrap
            md:flex-row md:h-auto justify-evenly mx-auto sm:py-16 md:py-20 lg:py-24 xl:py-28">
             
              <div className="max-w-[1320px] mx-auto text-[16px]  py-4 ">

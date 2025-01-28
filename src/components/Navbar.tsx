@@ -74,13 +74,13 @@ const Navbar = () => {
         </ul>
 
         <Sheet>
-          <SheetTrigger className="md:hidden text-[#FF9F0D] ">
+          <SheetTrigger className="md:hidden text-primary ">
             <Menu />
           </SheetTrigger>
-          <SheetContent className='bg-white'>
+          <SheetContent className='bg-white text-primary'>
             <ul className="flex flex-col gap-1 list-none ">
               <Link href={"/"} className="mr-5 text-1xlhover:text-gray-500">
-                Home <CircleEllipsis className='w-3 h-3 text-[#FF9F0D]' />
+                Home <CircleEllipsis className='w-3 h-3 text-primary' />
               </Link>
               <Link href={"/blog"} className="mr-5 text-1xl hover:text-gray-500">
                 Blog

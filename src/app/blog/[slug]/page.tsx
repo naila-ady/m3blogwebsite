@@ -35,7 +35,7 @@ export default async function Blog({
         {data.title}
       </h2>
       <div className=' flex justify-center py-4'>
-        <Image src={urlFor(data.titleimage).url()} width={800} height={800} alt={"img"} priority
+        <Image src={urlFor(data.titleimage).url()} width={700} height={800} alt={"img"} priority
           className='rounded-xl py-4  ' />
       </div>
 
