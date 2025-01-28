@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default async function Home(){
-  const query =`*[_type =='blog']  | order(_createdAt asc){
+  const query =`*[_type =='blog']  |  order(_createdAt asc){
        title,
        'currentslug':slug.current,
        titleimage,
